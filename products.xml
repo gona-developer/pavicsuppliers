@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <products>
+        <product>
+            <name>Whole Chicken</name>
+            <description>Fresh, whole chicken, farm-raised</description>
+            <price> KES 650</price>
+            <image>chicken.jpeg</image>
+        </product>
+
+        <product>
+            <name>Chicken Breast</name>
+            <description>Boneless, skinless chicken breast</description>
+            <price>KES 450</price>
+            <image>breast.jpg</image>
+        </product>
+
+        <product>
+            <name>Chicken Wings</name>
+            <description>Fresh chicken wings for grilling</description>
+            <price>KES 350</price>
+            <image>wings.jpeg</image>
+        </product>
+
+        <product>
+            <name>Eggs</name>
+            <description>Fresh free-range eggs</description>
+            <price> KES 180</price>
+            <image>eggs.jpeg</image>
+        </product>
+        <product>
+            <name>Drum stick</name>
+            <description>fresh chicken/ duck/ turkey/ gueese</description>
+            <price>400</price>
+            <image>drum stick.jpeg</image>
+        </product>
+        <product>
+            <name>mix</name>
+            <description>fresh chicken heads + legs</description>
+            <price>150</price>
+            <image>mix.jpeg</image>
+        </product>
+        <product>
+            <name>whole turkey</name>
+            <description>Fresh whole turkey, farm raised</description>
+            <price>750</price>
+            <image>turkey meat.jpeg</image>
+        </product>
+        <product>
+            <name>Whole duck</name>
+            <description>Fresh whole duck, farm raised</description>
+            <price>650</price>
+            <image>duck meat.jpeg</image>
+        </product>
+        <product>
+            <name>Whole geeese</name>
+            <description>Fresh whole geese</description>
+            <price>700</price>
+            <image>gueese meat.jpeg</image>
+        </product>
+    </products>
+
+    <div id="product-grid">
+    <div class="product-container" data-id="1">
+        <img src="chicken.jpeg" alt="Whole Chicken">
+        <h3>Whole Chicken</h3>
+        <p>Fresh, whole chicken, farm-raised</p>
+        <p>Price: KES 650</p>
+        <button class="order-btn">Order Now</button>
+    </div>
+    <!-- Repeat for other products -->
+</div>
+
+<!-- Cart Section -->
+<div id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Total: KES 0</p>
+</div>

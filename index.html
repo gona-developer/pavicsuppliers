@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pavic Fresh Poultry Products Suppliers</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' media='screen' href='style.css'>
+</head>
+<body>
+    <header>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul role="list">
+                <li role='listitem'><a href="#home">Home</a></li>
+                <li role='listitem'><a href="#products">Products</a></li>
+                <li role='listitem'><a href="#services">Services</a></li>
+                <li role='listitem'><a href="#about">About us</a></li>
+                <li role='listitem'><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+      <div id="greetings" aria-live="polite"></div>
+       <script>
+        function updateGreetings(){
+            const hour= new Date().getHours();
+            let message= "Hello! Welcome to Pavic Suppliers";
+            if (hour<12){
+                message="Good Morning! Welcome to Pavic Suppliers";
+            }else if (hour<18){
+                message="Good Afternoon! Welcome to Pavic Suppliers";
+            }else {
+                message="Good Evening! Welcome to Pavic Suppliers";
+            }
+            document.getElementById('greetings').textContent=message;
+            
+         }
+         updateGreetings();
+        </script>
+        
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Pavic Fresh Poultry Products Suppliers </h1>
+            <p>Quality Products @ Affordable Prices</p>
+                <a href="#products" class="btn">View Products</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our products</h2>
+        <div class="product-grid" id="product-grid">
+        </div>
+    </section>
+    
+
+    <section id="services" class="services">
+        <div id="info-container">
+        <div class="info-box">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>We offer:</h3>
+                <p>All Poultry Products</p>
+                <p>Our delivery servicesare Fast and Reliable to area within 15 km</p>
+            </div>
+          </div>
+         </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="about" class="about">
+        <div id="info-container">
+        <div class="info-box">
+        <h2>About us</h2>   
+        <p>Pavic Fresh Poultry Products Suppliers is a</p>
+        <P> leading supplier dedicated to providing our </p>
+        <p> customers with best quality poultry products.</p>
+        <P>We are committed to customer satisfaction.</p>
+        <p>We are located at Zulia City in Roka,Kenya.</p>
+        <pre> Working hours:
+            Monday: 9:00 AM - 6:00 PM
+             Tuesday: 9:00 AM - 6:00 PM
+              Wednesday:9:00 AM - 6:00 PM
+            Friday: 9:00 AM - 6:00 PM
+               Saturday: 10:00 AM - 4:00 PM
+ Sunday: Closed
+        </pre>
+       </div>
+       </div>
+     </div>
+    </section>
+    <section id="contact" class="contact">
+       <div class="multi-column-container">
+        <div id="info-container">
+        <div class="info-box">
+        <h2>Contact Us</h2>
+        <p>Reach us via:</p>
+        <p>Tel: 0758123894</p>
+        <p>Email:pavicfreshsuppliers@gmail.com</p>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+     </div>
+    </div>
+    </section>
+
+    <button id="themeToggle" aria-pressed="false" onclick="toggleTheme()">Toggle Theme</button>
+
+    <script>
+        function toggleTheme() {
+            const button= document.getElementById('themeToggle');
+            document.body.classList.toggle("dark-mode");
+            button.setAttribute('aria-pressed', button.getAttribute("aria-pressed")==="true"? "false" :"true");
+        }
+    </script>
+    <style>
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    
+    <footer>
+       <p>&copy;2025 Pavic Fresh Poultry Products Suppliers. All rights reserved</p>
+    </footer>
+   <script src="script.js"></script>
+</body>
+</html>
